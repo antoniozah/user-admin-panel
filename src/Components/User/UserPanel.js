@@ -106,16 +106,14 @@ function UserPanel() {
                     ))}
                 </ul>
             </div>
-            {activeTab !== '' && (
-                <UserForm
-                    editData={editFormData}
-                    editFormChange={handleEditFormChange}
-                    editFormSubmit={handleEditFormSubmit}
-                    cancelChanges={handleCancelClick}
-                    cancelBtn={cancelIsActive}
-                    saveBtn={saveIsEnabled}
-                />
-            )}
+            <UserForm
+                editData={editFormData}
+                editFormChange={handleEditFormChange}
+                editFormSubmit={handleEditFormSubmit}
+                cancelChanges={handleCancelClick}
+                cancelBtn={cancelIsActive}
+                saveBtn={saveIsEnabled}
+            />
         </div>
     );
 }
