@@ -1,0 +1,73 @@
+.userform {
+    flex: 1;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+}
+
+.form-group:not(:last-of-type) {
+    margin-bottom: 23px;
+}
+
+.form-group label,
+.form-group input {
+    display: flex;
+    width: 100%;
+}
+
+.form-group label {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 9px 6px;
+    font-size: 16px;
+    border: 1px solid #ececec;
+    background-color: transparent;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 47px;
+}
+
+.btn {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:not(:last-of-type) {
+    margin-right: 6px;
+}
+
+.btn--cancel {
+    background-color: #f7f7f7;
+}
+
+.btn--save {
+    color: white;
+    background-color: #1b68b3;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.btn--save.disabled {
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 768px) {
+    .userform {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .userform > form {
+        width: 100%;
+    }
+}

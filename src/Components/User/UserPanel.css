@@ -1,0 +1,40 @@
+.userpanel {
+    display: flex;
+    background-color: #fff;
+}
+
+.usernav {
+    width: 95px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.userlist {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -20px;
+    right: -20px;
+    overflow: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .userpanel {
+        height: 540px;
+        width: 100%;
+        max-width: 1042px;
+        overflow: hidden;
+    }
+    .usernav {
+        width: 50%;
+        height: 100%;
+    }
+    .userlist {
+        -ms-overflow-style: auto; /* IE and Edge */
+        scrollbar-width: auto; /* Firefox */
+        position: static;
+    }
+}

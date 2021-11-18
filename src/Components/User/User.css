@@ -1,0 +1,58 @@
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+    cursor: pointer;
+}
+
+.user.active,
+.user.active:hover {
+    background-color: #1b68b3;
+}
+
+.user:hover {
+    background-color: #e8e8e8;
+}
+
+.user__photo {
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user__photo > img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.user__info {
+    padding: 0 20px;
+}
+
+.user__info h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user.active .user__info h2 {
+    color: #fff;
+}
+
+.user__info p {
+    color: grey;
+}
+
+.user.active .user__info p {
+    color: lightsteelblue;
+}
+
+@media only screen and (min-width: 768px) {
+    .user {
+        justify-content: flex-start;
+    }
+}
